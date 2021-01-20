@@ -1,0 +1,35 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title>Задание №2</title>
+</head>
+<body>
+<div>
+    <input type="button"  onclick="asd()" value="Копировать">
+    <input type="button"  onclick="clasd()" value="Стереть оба">
+    <input type="textarea" id="pole1">
+    <input type="textarea" id="pole2" disabled>
+</div>
+<script>
+function asd() {
+	var
+	pole1=document.getElementById('pole1');
+	pole2=document.getElementById('pole2');
+	if (pole1.value=='') {
+		alert("Введите текст в первое поле!");
+	}
+	else {
+	pole2.value=pole1.value;
+	}
+}
+function clasd(){
+	var
+	pole1=document.getElementById('pole1');
+	pole1.value='';
+	pole2=document.getElementById('pole2');
+	pole2.value='';
+
+}
+</script>
+</body>
+</html>

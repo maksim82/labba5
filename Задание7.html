@@ -1,0 +1,24 @@
+<!DOCTYPE>
+<html>
+<head>
+    <link href="Задание7.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="soderj"></div>
+<div class="soderj2"></div>
+<div id="scrollToTop" onclick="goUp();">&uarr;</div>
+<script type="text/javascript">
+		window.onscroll = function() {
+   		var scrollElem = document.getElementById("scrollToTop");
+  		if (window.pageYOffset > document.documentElement.clientHeight) {
+     	scrollElem.style.opacity = "1";
+   		} else {
+       	scrollElem.style.opacity = "0";
+   }
+}
+	var timeOut;
+function goUp() {
+      window.scrollTo(pageXOffset,0);}
+	</script>
+</body>
+</html>
